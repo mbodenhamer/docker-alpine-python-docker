@@ -1,6 +1,6 @@
 # -*- dockerfile -*-
 FROM mbodenhamer/alpine-python:latest
-MAINTAINER {{maintainer_name}} <{{maintainer_email}}>
+MAINTAINER Matt Bodenhamer <mbodenhamer@mbodenhamer.com>
 
 RUN apk add --no-cache \
     curl
