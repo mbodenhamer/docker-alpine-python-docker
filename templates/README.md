@@ -6,4 +6,7 @@ An Alpine image for managing Docker with Python.
 
 ## Usage
 
-TODO...
+To use, supply an command when creating the container.  For example, to check the version of the docker client in the container, run:
+
+    $ {{example_1}}
+

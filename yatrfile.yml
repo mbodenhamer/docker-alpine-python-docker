@@ -10,8 +10,15 @@ macros:
   name: alpine-python-docker
   version: "0.1"
 
+  run_prefix_docker: >
+    {{run_prefix}} -v /var/run/docker.sock:/var/run/docker.sock
+
+  example_base: "{{run_prefix_docker}} {{image}}:latest"
+  example_1: "{{example_base}} docker version"
+
 #-------------------------------------------------------------------------------
 tasks:
-  examples: []
+  examples:
+    - "{{example_1}}"
 
 #-------------------------------------------------------------------------------
