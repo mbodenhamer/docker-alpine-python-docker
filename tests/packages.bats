@@ -33,3 +33,15 @@ load test_helpers
     run launch python -c "import dockerman"
     [[ $status = 0 ]]
 }
+
+@test "[$TEST_FILE] Check if docker-compose is installed" {
+    run launch docker-compose version
+    [[ ${lines[0]} =~ "docker-compose" ]]
+    [[ $status = 0 ]]
+}
+
+@test "[$TEST_FILE] Check if git is installed" {
+    run launch git --version
+    [[ ${lines[0]} =~ "git version" ]]
+    [[ $status = 0 ]]
+}

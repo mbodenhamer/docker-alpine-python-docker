@@ -1,7 +1,7 @@
 prod:
   pip:
-    - dockerman # TODO: add versions here
+    - dockerman
+    - docker-compose
 
   yatr:
     - install-docker-files
-    # - install-bats

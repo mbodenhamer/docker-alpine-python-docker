@@ -3,7 +3,8 @@ FROM mbodenhamer/alpine-python:latest
 MAINTAINER Matt Bodenhamer <mbodenhamer@mbodenhamer.com>
 
 RUN apk add --no-cache \
-    curl
+    curl \
+    git
 
 COPY setup/ /setup/
 
