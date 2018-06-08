@@ -33,6 +33,3 @@ load test_helpers
     run launch python -c "import dockerman"
     [[ $status = 0 ]]
 }
-
-# TODO: check bats
-
